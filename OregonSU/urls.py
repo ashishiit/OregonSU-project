@@ -15,12 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .views import homepage
 from . import views
-# from articles import views as article_views
+
+
+# from MarineAnimals import views as article_views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homepage, name = 'homepage'),
-    path('articles/', include('articles.urls')),
+    path('', views.homepage),
+    
+    path('animals/', include('MarineAnimals.urls')),
+    path('accounts/', include('accounts.urls')),
+#     path('MarineAnimals/', include('MarineAnimals.urls')),
 #     re_path(r'^(?P<slug>[\w-]+)/$',views.homepage, name = 'homepage' ),
    
 ]
