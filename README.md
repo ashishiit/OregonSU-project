@@ -9,3 +9,12 @@ The content currently is the name and description of the marine animals.
 TO-DO : the website should support uploading and viewing of pictures and 3D models of the marine animals
 
 The website is live at https://osuapp.herokuapp.com/
+
+instructor : -
+username : root
+password : root1234
+
+
+student : -
+username : test
+password : test1234
